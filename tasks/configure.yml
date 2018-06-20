@@ -3,6 +3,9 @@
   file:
     path: "{{ item }}"
     state: directory
+    mode: 0755
+    owner: "grafana"
+    group: "grafana"
   with_items:
     - "/etc/grafana"
     - "/etc/grafana/datasources"
